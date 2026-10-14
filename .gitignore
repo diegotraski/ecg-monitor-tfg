@@ -1,0 +1,9 @@
+# Datos de entrenamiento (se descargan aparte, ver README)
+mitbih_*.csv
+# Modelo entrenado y datos generados por la app
+ecg_model.pkl
+predicciones_ecg.csv
+*.db
+# Python
+__pycache__/
+.ipynb_checkpoints/

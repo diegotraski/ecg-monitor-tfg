@@ -1,0 +1,13 @@
+# Dependencias de la aplicación web (streamlit.py), el monitor de escritorio (serialmonitor.py)
+# y el entrenamiento del modelo (model.py)
+streamlit
+pandas
+numpy
+scipy
+scikit-learn
+matplotlib
+joblib
+pillow
+pyserial
+peakutils
+xlwt

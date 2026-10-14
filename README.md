@@ -45,7 +45,7 @@ En respuesta a esta necesidad, se ha desarrollado una **aplicación web accesibl
 
 ## 🧠 Modelo y resultados
 
-El modelo se ha entrenado con la base de datos **MIT-BIH Arrhythmia** y alcanza una **exactitud del 97,5 %** en la clasificación de latidos. Todo el proceso de tratamiento de datos, comparación de modelos y elección de Random Forest está documentado en [`AnalisisBueno.ipynb`](AnalisisBueno.ipynb).
+El modelo se ha entrenado con la base de datos **MIT-BIH Arrhythmia** y alcanza una **exactitud del 97,5 %** en la clasificación de latidos. Todo el proceso de tratamiento de datos, comparación de modelos y elección de Random Forest está documentado en [`analisis_datos_y_modelo.ipynb`](analisis_datos_y_modelo.ipynb).
 
 <div align="center">
 <img src="Documentación_Proyecto/img/resultados.png" alt="Resultados del modelo" width="60%">
@@ -68,12 +68,17 @@ El modelo se ha entrenado con la base de datos **MIT-BIH Arrhythmia** y alcanza 
 ## 🚀 Puesta en marcha
 
 ```bash
-pip install streamlit pandas numpy scipy scikit-learn matplotlib joblib pillow pyserial
+pip install -r requirements.txt
 python model.py          # entrena el modelo y genera ecg_model.pkl
 streamlit run streamlit.py
 ```
 
-> Los datos de entrenamiento (MIT-BIH) y el material completo para ejecutar el proyecto están enlazados en los archivos [`DataECG`](DataECG) y [`TFG`](TFG). Carga en la placa el código de [`Arduino/Version 2`](Arduino/Version%202) antes de conectar el dispositivo.
+> Antes de entrenar, descarga `mitbih_train.csv` y `mitbih_test.csv` (ver [Datos](#-datos)) y déjalos junto a `model.py`. Carga en la placa el código de [`Arduino/Version 2`](Arduino/Version%202) antes de conectar el dispositivo.
+
+## 📊 Datos
+
+- **Entrenamiento y prueba:** [ECG Heartbeat Categorization Dataset](https://www.kaggle.com/datasets/shayanfazeli/heartbeat) (`mitbih_train.csv` y `mitbih_test.csv`), latidos segmentados de la base de datos pública [MIT-BIH Arrhythmia](https://physionet.org/content/mitdb/1.0.0/) de PhysioNet. No se incluyen en el repositorio por su tamaño.
+- **Vídeo de demostración y material completo del TFG:** alojados en el OneDrive de la Universidad de Burgos (acceso con cuenta institucional). Disponibles bajo petición.
 
 ## 📁 Estructura del repositorio
 
@@ -81,18 +86,13 @@ streamlit run streamlit.py
 ├── streamlit.py              # Aplicación web principal (Streamlit)
 ├── serialmonitor.py          # App de escritorio (Tkinter) para monitorización y grabación
 ├── model.py                  # Entrenamiento del modelo → ecg_model.pkl
-├── AnalisisBueno.ipynb       # Análisis de datos y selección del modelo
+├── analisis_datos_y_modelo.ipynb  # Análisis de datos y selección del modelo
+├── requirements.txt          # Dependencias de Python
 ├── Arduino/
 │   ├── Version 1/            # Pruebas iniciales con KY-039 y AD8232 (USB y Bluetooth)
 │   └── Version 2/            # Código final: AD8232, USB, reducción de ruido, LED y autocalibración
 ├── fotos/                    # Imágenes usadas en la app web
-├── Documentación_Proyecto/   # Memoria y anexos en LaTeX (+ imágenes)
-├── Memoria_…_firmado.pdf     # Memoria completa del TFG
-├── Anexo_…pdf                # Anexos del TFG
-├── Diagrama Gantt.xlsx       # Planificación temporal
-├── DataECG                   # Enlace a los datos de entrenamiento y prueba
-├── TFG                       # Enlace al material completo del proyecto
-└── Video demostración        # Enlace al vídeo de demostración
+└── Documentación_Proyecto/   # Memoria y anexos (PDF y LaTeX), imágenes y diagrama de Gantt
 ```
 
 ### Arduino
@@ -106,8 +106,8 @@ streamlit run streamlit.py
 
 ## 📄 Documentación
 
-- 📘 [Memoria del TFG (PDF)](Memoria_Diego_Trascasa_García_firmado.pdf)
-- 📗 [Anexos (PDF)](Anexo_Diego_Trascasa_García.pdf)
+- 📘 [Memoria del TFG (PDF)](Documentación_Proyecto/Memoria_Diego_Trascasa_García_firmado.pdf)
+- 📗 [Anexos (PDF)](Documentación_Proyecto/Anexo_Diego_Trascasa_García.pdf)
 - 🎥 [Vídeo de demostración](Video%20demostración)
 
 ## 👤 Autor
