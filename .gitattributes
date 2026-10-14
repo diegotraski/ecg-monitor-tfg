@@ -1,0 +1,3 @@
+# The analysis notebook is large; count the project as Python on GitHub
+*.ipynb linguist-detectable=false
+*.tex linguist-documentation

@@ -17,6 +17,15 @@ Trabajo Fin de Grado · Ingeniería de la Salud · Universidad de Burgos
 
 </div>
 
+<details>
+<summary>🇬🇧 <b>English summary</b></summary>
+
+<br>
+
+**Final Degree Project (Health Engineering, University of Burgos).** A low-cost, real-time heart monitor: an Arduino with an AD8232 ECG sensor streams the signal over serial to a Streamlit web app that plots the ECG live, computes heart rate (BPM), records sessions and classifies heartbeats with a Random Forest model trained on the MIT-BIH Arrhythmia database (97.5% accuracy). Predictions can be saved with a timestamp to a SQLite database, managed from the app and exported to CSV.
+
+</details>
+
 ---
 
 ## 📋 Resumen
