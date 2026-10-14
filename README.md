@@ -78,7 +78,14 @@ streamlit run streamlit.py
 ## 📊 Datos
 
 - **Entrenamiento y prueba:** [ECG Heartbeat Categorization Dataset](https://www.kaggle.com/datasets/shayanfazeli/heartbeat) (`mitbih_train.csv` y `mitbih_test.csv`), latidos segmentados de la base de datos pública [MIT-BIH Arrhythmia](https://physionet.org/content/mitdb/1.0.0/) de PhysioNet. No se incluyen en el repositorio por su tamaño.
-- **Vídeo de demostración y material completo del TFG:** alojados en el OneDrive de la Universidad de Burgos (acceso con cuenta institucional). Disponibles bajo petición.
+
+## 🖼️ La aplicación en imágenes
+
+| Detección de picos R en la señal | Monitor de escritorio en tiempo real |
+|---|---|
+| <img src="Documentación_Proyecto/img/analisis1.png" width="100%"> | <img src="Documentación_Proyecto/img/ventana_tinker.png" width="100%"> |
+| **Esquema de conexión AD8232 + Arduino** | **Carcasa impresa en 3D** |
+| <img src="Documentación_Proyecto/img/esquema.png" width="100%"> | <img src="Documentación_Proyecto/img/caja3d.jpg" width="100%"> |
 
 ## 📁 Estructura del repositorio
 
@@ -108,7 +115,6 @@ streamlit run streamlit.py
 
 - 📘 [Memoria del TFG (PDF)](Documentación_Proyecto/Memoria_Diego_Trascasa_García_firmado.pdf)
 - 📗 [Anexos (PDF)](Documentación_Proyecto/Anexo_Diego_Trascasa_García.pdf)
-- 🎥 [Vídeo de demostración](Video%20demostración)
 
 ## 👤 Autor
 
